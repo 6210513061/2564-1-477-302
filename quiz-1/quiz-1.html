@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียนเข้าสู่ระบบ</title>
+    <style>
+        h1 {color:black;font-family: 'Courier New', Courier, monospace;}
+        h3 {color:red;font-family: 'Courier New', Courier, monospace;}
+    </style>
+    
+</head>
+<body bgcolor="wheat">
+        <h1>แบบฟอร์มลงทะเบียน</h1>
+        <h3>*กรุณากรอกข้อมูลให้ครบทุกช่อง</h3>
+            <div class="row">
+                <div class="col-12 col-sm-2 mb-3">
+                    <select name="firstname" class="form-control" required>
+                        <option value="">คำนำหน้าชื่อ</option>
+                        <option value="นาย">นาย</option>
+                        <option value="นางสาว">นางสาว</option>
+                    </select>
+                    <input type="text"  name="name" class="form-control" placeholder="ชื่อ" required>
+                    <input type="text" name="lastname" class="form-control" placeholder="นามสกุล" required>
+                </div>
+                <div>
+                    <h5>
+                        เบอร์โทรศัพท์
+                        <input type="text"  name="stdcode" class="form-control" placeholder="เบอร์โทรศัพท์ 10 หลัก"  minlength="10" maxlength="10" required>
+                    </h5>
+                     <h5>
+                        เลขบัตรประชาชน
+                        <input type="text"  name="stdcode" class="form-control" placeholder="เลขบัตรประชาชน 13 หลัก"  minlength="10" maxlength="10" required>
+                        <br>
+                        แนบรูปบัตรประชาชน
+                        <input type="file">
+                    </h5>
+                </div> 
+                <div>
+                    <h5>
+                        ตั้งค่าผู้ใช้ <br>
+                        <input type="text"  name="name" class="form-control" placeholder="Username" required>
+                    </h5>
+                    <h5>
+                        ตั้งค่ากำหนดรหัสผ่าน <br>
+                        <input type="text"  name="name" class="form-control" placeholder="Password" required>
+                    </h5>
+                </div>
+                <p>
+                    <button type="submit" value="บันทึกข้อมูล"  href=""> บันทึกข้อมูล </button>
+                    <button type="return" value="กลับไปหน้าลงทะเบียน">
+                        <a href="quiz-1_6210513061.html">
+                            กลับไปหน้าลงทะเบียน
+                        </a>
+                    </button>
+            </div> 
+</body>
+</html>
