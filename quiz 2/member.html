@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก</title>
+    <link rel="stylesheet" href="member.css">
+</head>
+<body>
+    ,<center>
+    <form>
+        <h2 align="center">สมัครสมาชิก</h2>
+        <p align="center">*กรอกข้อมูลให้ครบถ้วน</p>
+        <div class="form">
+            
+            <div class="form_member">
+                <lable>
+                    <p>กำหนด Username : <input type="username" name="username" placeholder="ระบุ Username ที่ต้องการ"></p>
+                    <p>กำหนด Password : <input type="password" name="password" placeholder="ระบุ Password ที่ต้องการ"></p>
+                    <p>ยืนยัน Password : <input type="password" name="password" placeholder="ระบุ Password อีกครั้ง"></p>
+                </lable>
+            </div>
+            <div>
+                <alble>
+                    <a>Firstname : <input type="text" name="firstname" placeholder="กรอกชื่อ"></a>
+                    &nbsp;
+                    <a>Lastname : <input type="text" name="lastname" placeholder="กรอกนามสกุล"></a>
+                    <br><br>
+                    <a>E-mail : <input type="email" name="email" placeholder="example@mail.com"></a>
+                    &nbsp;
+                    <a>Phone : <input type="tel" name="phone" placeholder="กรอกเบอร์โทรศัพท์"></a>
+                    <br><br>
+                    <a>Age: <input type="number" name="age" placeholder="กรอกอายุ"></a>
+                    &nbsp;
+                    <a>Birthday : <label for="date"></label> <input type="date" name="birthday"></a>
+                    <br><br>
+                    <a>ที่อยู่ : <input type="text" name="address" placeholder="ระบุที่อยู่ของคุณ"></a>
+                    &nbsp;
+                    <input type="button" value="ดูที่อยู่ของคุณ" onclick="getLocation()"> <a>*ถ้าไม่ทราบที่อยู่ของคุณกดปุ่มตรงนี้</a>
+                </alble>
+            </div>
+            <br>
+            <div class="dialog_submit" align="center">
+                <input type="button" value="Submit" onclick="dialog()"> 
+                <dialog id="dialog">ระบบได้รับข้อมูลของท่านแล้ว  
+                    <br>
+                    <button>ตกลง</button>
+                </dialog>
+                <script src="dialog_member.js"></script>
+            </div>
+        </div>
+        <br>
+        <a href="login.html">กลับไปหน้าเข้าสู่ระบบ</a>
+        <br>
+    </form>
+    </center>
+    <center>
+    <p>
+        <div id="mapholder" class="map"></div>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoKoNVKdXRrp8YDgara5W1m2nfTU1dG5g&callback=initMap" type="text/javascript"></script>
+        <script src="map.js"></script>
+    </p>
+    </center>
+</body>
+</html>

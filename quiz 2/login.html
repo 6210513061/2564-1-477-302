@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body onload="chkUsername()">
+    <center>
+    <form align="center"> 
+        <h2 class="toplogin" >เข้าสู่ระบบ</h2>
+        <br>
+        <div class="form" >
+            <label for="email">&nbsp; &nbsp;  &nbsp;Email : </label>
+            <input type="email" id="email">
+            <br><br>
+            <label for="pass">Password : </label>
+            <input type="password">
+            <br><br>
+            <div class="form-group row">
+                <div class="col-md-12">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" value="lsRememberMe" id="rememberMe"> <label for="rememberMe">จำ Username</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <a href="Repassword.html" target="_blank" id="to-recover" class="text-dark float-right"><i class="fa fa-lock mr-1"></i> ลืมรหัสผ่าน?</a>
+                    </div>
+                </div>
+            </div> 
+            <br>
+            <input type="submit" value="Login" onclick="lsRememberMe()">
+            <br><br>
+            <a href="member.html">สมัครสมาชิก</a>  
+        </div>
+    </form>
+    </center>
+    <script src="login.js"></script>
+</body>
+</html>
