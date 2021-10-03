@@ -16,9 +16,18 @@
         $text1 = "I am";
         $age = 40;
         $text2 = "year old";
-        echo $text;
-        echo $echo;
-        echo $text2;
+        $_txt1 = "";
+        $chk = true;
+            //true
+        if ($chk) {
+            //true    
+        }else {
+            //false
+        }
+
+        //echo $text;
+        //echo $echo;
+        //echo $text2;
         echo $text1 . $age . $text2;
     ?>
 
